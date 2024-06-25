@@ -4,9 +4,10 @@ import './add.css'
 const About = () => {
   return (
     <>
-    <h1 className='text-center heading mt-4'>About Me</h1>
+    <div className='mt-4 vh-50 about'>
+    <h1 className='text-center heading '>About Me</h1>
    
-    <div className='about-container mt-2  vh-50 '>
+    <div className='about-container   '>
       
       <div className='imgContainer'>
         <img src='yella 1.png' alt='aboutImg' className='aboutImg'/>
@@ -18,6 +19,7 @@ const About = () => {
             <br /> Explore my projects to see my work!
       </p>
 
+      </div>
       </div>
     </div>
     </>

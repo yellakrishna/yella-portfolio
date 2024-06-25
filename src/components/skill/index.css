@@ -1,18 +1,55 @@
-.frontend{
-    width: 400px;
-    height: 250px;
-    background-color: rgb(231, 225, 217);
-     margin:2rem;
-      text-align: center;
-      padding: 10px;
+.skill {
+  font-variant: small-caps;
 }
-.frontend h4 p{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.frontend {
+  width: 500px;
+  height: 300px;
+  background-color: bisque;
+  margin: 2rem;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid gainsboro;
 }
-.skillContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.frontend h4 {
+  text-decoration: underline;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.frontend p {
+  font-weight: bold;
+}
+.skillContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.miniBox {
+  height: 50px;
+  width: 100px;
+  background-color: rgba(110, 195, 231, 0.849);
+  text-align: center;
+  padding-top: 14px;
+  box-shadow: 5px 0px 10px 5px rgb(35, 33, 33);
+  margin: 10px;
+}
+.miniBoxs {
+  height: 50px;
+  width: 100px;
+  background-color: rgba(53, 234, 222, 0.849);
+  text-align: center;
+  padding-top: 14px;
+  box-shadow: 5px 0px 10px 5px rgb(35, 33, 33);
+  margin: 10px;
+}
+.boxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 764px) {
+  .frontend {
+    height: 400px;
+  }
 }

@@ -22,6 +22,7 @@ const Navbar = () => {
         
         <NavLink to="/about">About</NavLink>
         <NavLink to="/skills">Skills</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/login">Login</NavLink>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>

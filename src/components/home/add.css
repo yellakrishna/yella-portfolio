@@ -3,16 +3,18 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 80px;
+  padding-bottom: 160px;
 }
 .yellaImg{
-  height: 300px;
+  height: 370px;
   width: 400px;
-  border-radius: 50%;
+  border-radius: 5%;
+  
 }
 .yellaImg {
   display: inline-block;
-  animation: up-down 2s ease-in-out infinite;
+  animation: up-down 5s ease-in-out infinite;
 }
 
 @keyframes up-down {
@@ -35,7 +37,7 @@
   margin-right: 500px;
   box-shadow: 5px 0px 10px 5px rgb(104, 86, 86);
   position: absolute;
-  top: 450px;
+  top: 480px;
   left: 300px;
 }
 
@@ -46,10 +48,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 4px;
+    padding-bottom:50px ;
   }
   .yellaImg{
     order: 2;
     z-index: -1;
+  }
+  .button{
+    display: none;
   }
 }
 
