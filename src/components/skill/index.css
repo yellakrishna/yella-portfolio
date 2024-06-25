@@ -1,0 +1,18 @@
+.frontend{
+    width: 400px;
+    height: 250px;
+    background-color: rgb(231, 225, 217);
+     margin:2rem;
+      text-align: center;
+      padding: 10px;
+}
+.frontend h4 p{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.skillContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
