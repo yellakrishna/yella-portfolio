@@ -3,8 +3,10 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin: 12px;
   margin-top: 80px;
   padding-bottom: 160px;
+  
 }
 .yellaImg{
   height: 370px;
@@ -49,13 +51,22 @@
     align-items: center;
     margin-top: 4px;
     padding-bottom:50px ;
+    margin: 16px;
   }
   .yellaImg{
     order: 2;
     z-index: -1;
+    height: 270px;
+  width: 350px;
+  border-radius: 5%;
+  padding: 12px;
+  margin-top: 6px;
   }
   .button{
     display: none;
+  }
+  .heading{
+    padding-left: 16px;
   }
 }
 

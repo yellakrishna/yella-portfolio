@@ -4,7 +4,7 @@
 .frontend {
   width: 500px;
   height: 300px;
-  background-color: bisque;
+  background-color:azure;
   margin: 2rem;
   text-align: center;
   padding: 10px;
@@ -50,6 +50,13 @@
 }
 @media screen and (max-width: 764px) {
   .frontend {
-    height: 400px;
+    height: 250px;
+    width: 300px;
+  }
+  .skillContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
