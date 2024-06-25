@@ -4,6 +4,7 @@ import "./add.css";
 // import Items from '../items/Items'
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import About from "../about";
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
       </div>
       <button className="button btn btn-success">Say Hello!
       </button>
-      
+      <About/>
     </>
   );
 };
