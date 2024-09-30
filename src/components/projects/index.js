@@ -1,11 +1,85 @@
-import React from 'react'
+import React from "react";
+import "./add.css";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const data = [
+  {
+    id: 1,
+    imgUrl: "./images/onlineFish.png",
+    href: "https://online-fish-market-alampur.netlify.app/",
+    name: "HTML , CSS , Javascript , React",
+    head: "Fishing-Marketing",
+  },
+  {
+    id: 2,
+    imgUrl: "./images/portfolio.png",
+    href: "https://portfolio-yella.netlify.app/",
+    name: "HTML , CSS , Javascript , React",
+    head: "Portfolio",
+  },
+  {
+    id: 3,
+    imgUrl: "./images/input.png",
+    href: "https://user-input-search.netlify.app/",
+    name: "HTML , CSS , Javascript , React",
+    head: "InputSeacher",
+  },
+  {
+    id: 4,
+    imgUrl: "./images/calculator.png",
+    href: "https://calculator-react123.netlify.app/",
+    name: "HTML , CSS , Javascript ",
+    head: "Calculator",
+  },
+  {
+    id: 5,
+    imgUrl: "./images/todolist.png",
+    href: "https://yella-todolist.netlify.app/",
+    name: "HTML , CSS , Javascript ",
+    head: "Todolist",
+  },
+];
 
 const Projects = () => {
   return (
     <div>
-      projects
-    </div>
-  )
-}
+      <h1>projects</h1>
+      <ul>
+        {data.map((eachItem) => {
+          const { id, imgUrl, head, name, href } = eachItem;
+          return (
+            <li key={id}>
+              <div>
+                <h5>{head}</h5>
+                <div>
+                  <a href={href}>
+                    <img
+                      src={imgUrl}
+                      alt="fish"
+                      style={{ height: 120, width: 350 }}
+                    />
+                  </a>
+                </div>
 
-export default Projects
+                <p>{name}</p>
+                <a href={href}><button className="btn btn-info">Demo</button></a>
+
+                <a
+                  className="text-center m-4 "
+                  href="https://github.com/yellakrishna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} size="2x" />
+                </a>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
+
+export default Projects;

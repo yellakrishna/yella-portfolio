@@ -25,6 +25,7 @@ const Navbar = () => {
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/login">Login</NavLink>
+        <NavLink to="*"></NavLink>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
