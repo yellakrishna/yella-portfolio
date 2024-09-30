@@ -1,7 +1,7 @@
 import React from "react";
 import "./add.css";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const data = [
   {
@@ -65,14 +65,7 @@ const Projects = () => {
                 <p>{name}</p>
                 <a href={href}><button className="btn btn-info">Demo</button></a>
 
-                <a
-                  className="text-center m-4 "
-                  href="https://github.com/yellakrishna"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faGithub} size="2x" />
-                </a>
+                
               </div>
             </li>
           );
